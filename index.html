@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="n">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerd Mullet - Justin Jackson</title>
+    <style media="screen">
+      html {
+        background-color: #000;
+        background-image: url("invert.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+      }
+      html.w {
+        background-image: url("nerd-mullet-hair-best-funny-award.jpg");
+        background-color: #fff;
+      }
+      html.n {
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay="autoplay">
+      <source src="hotrod.mp3" />
+    </audio>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var b = $('html'), i = null;
+
+        b.on('click', function() {
+          if(i) {
+            clearInterval(i);
+          } else {
+            i = setInterval(function() {
+              b.toggleClass('w');
+            }, 25);
+          }
+        })
+
+        setTimeout(function() {
+          b.removeClass('n').click();
+        }, 2250)
+
+      })
+    </script>
+  </body>
+</html>
