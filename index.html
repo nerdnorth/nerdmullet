@@ -1,55 +1,24 @@
-<!DOCTYPE html>
-<html class="n">
-  <head>
-    <meta charset="utf-8">
-    <title>Nerd Mullet - Justin Jackson</title>
-    <style media="screen">
-      html {
-        background-color: #000;
-        background-image: url("invert.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-      }
-      html.w {
-        background-image: url("nerd-mullet-hair-best-funny-award.jpg");
-        background-color: #fff;
-      }
-      html.n {
-        background: #000;
-      }
-    </style>
-  </head>
-  <body>
-    <audio autoplay="autoplay">
-      <source src="hotrod.mp3" />
-    </audio>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Nerd Mullet</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        var b = $('html'), i = null;
-
-        b.on('click', function() {
-          if(i) {
-            clearInterval(i);
-          } else {
-            i = setInterval(function() {
-              b.toggleClass('w');
-            }, 25);
-          }
-        })
-
-        setTimeout(function() {
-          b.removeClass('n').click();
-        }, 2250)
-
-      })
-    </script>
-  </body>
+<body>
+<div class="main">
+	<article>
+     <h1 align="center">Class of 1993</h1>
+    <img src="img/nerd-mullet-hair-best-funny-award.jpg" style="width:80%;" alt="Justin Jackson best nerd mullet webmaster" border="0" class="img-responsive">
+    <p><strong>Name: </strong>Justin Jackson</p>
+    <p><strong>I want to be a... </strong>Webmaster</p>
+    <hr>
+    <h2 align="center">Contact</h2>
+    <p><a href="mailto:words@bizbox.ca">Email me here</a>: words@bizbox.ca</p>
+    </article>
+</div>
+</body>
 </html>
